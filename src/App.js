@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+import Recipe from './Recipe';
 import './App.css';
+import style from './recipe.module.css'
+import Recipes from './components/Recipes';
+import { Provider } from 'react-redux';
+import store from './store'
 
 function App() {
+
+  const updateSearch = e => {
+    setSearch(e.target.value);
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>    
+          <Recipes />
+    </Provider>
   );
 }
 
