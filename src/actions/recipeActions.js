@@ -12,7 +12,7 @@ export const fetchRecipes = (query, from, to) => async (dispatch) =>{
     
     if(res){
         data = await res.json();
-        console.log(data);
+        //console.log(data);
     }
 
     dispatch({

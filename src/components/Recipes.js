@@ -98,11 +98,11 @@ class Recipes extends Component {
                         next={this.fetchMoreData}
                         hasMore={this.state.listRecipe.length < this.props.count}
                         loader={<h4>Loading...</h4>}
-                        endMessage={
-                            <p style={{ textAlign: 'center' }}>
-                              <b>Yay! You have seen it all</b>
-                            </p>
-                          }
+                        // endMessage={
+                        //     <p style={{ textAlign: 'center' }}>
+                        //       <b>Yay! You have seen it all</b>
+                        //     </p>
+                        //   }
                         >
                             <div className="recipes">
                             {
