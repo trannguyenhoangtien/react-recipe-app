@@ -6,7 +6,9 @@ export const recipeReducer = (state={}, action) => {
         case FETCH_RECIPES:
             return{
                 ...state,
-                items: action.payload
+                items: action.payload.items,
+                count: action.payload.count,
+                error: action.payload.error
             };
         default:
             return state;

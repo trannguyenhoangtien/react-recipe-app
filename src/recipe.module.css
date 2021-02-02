@@ -16,3 +16,9 @@
   width: 100px;
   height: 100px;
 }
+
+.error {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
